@@ -20,5 +20,5 @@ data frame
 As its name suggests, this function returns the daily prices of a security between two dates given by the user. It receives three arguments.
 }
 \examples{
-daily.data(ticker = 'ATW',from = '01-01-2016',to = '01-01-2021')
+daily.data(ticker = "ATW", from = "01-01-2016", to = "01-01-2021")
 }
