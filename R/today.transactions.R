@@ -11,4 +11,7 @@ today.transactions=function(){
   colnames(trans)=trans[1,]
   trans=trans[-1,]
   return(trans)
+
 }
+
+

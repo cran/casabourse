@@ -1,7 +1,7 @@
 Package: casabourse
 Type: Package
 Title: Casablanca Stock Exchange Data
-Version: 0.2.0
+Version: 1.0.0
 Authors@R: 
     person(given = "Abdoul Oudouss",
            family = "Diakité",
@@ -18,8 +18,8 @@ Imports: gsheet, rvest, httr
 Suggests: rmarkdown, knitr
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-01-14 14:41:52 UTC; abdouloudoussdiakite
+Packaged: 2022-02-16 22:14:39 UTC; abdouloudoussdiakite
 Author: Abdoul Oudouss Diakité [aut, cre]
 Maintainer: Abdoul Oudouss Diakité <abdouloudoussdiakite@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-01-14 23:42:48 UTC
+Date/Publication: 2022-02-16 22:40:02 UTC
