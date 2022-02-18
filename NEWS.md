@@ -1,3 +1,5 @@
+# casabourse 1.1.0
+Error handling with tryCatch()
 # casabourse 1.0.0
 ## Added Masi historical data
 Now it is possible to get historical data from the MASI index

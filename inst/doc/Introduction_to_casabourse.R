@@ -25,6 +25,9 @@ head(ms) #>afichage des premiers elements de la table
 daily.data("ATW","01-01-2017","14-12-2021") #>affection de la table a la variable atw
 
 
+## ----message=FALSE, warning=FALSE---------------------------------------------
+get_info('ATW')
+
 ## -----------------------------------------------------------------------------
 #>Afichage des données par secteur d'activité
 bySector()

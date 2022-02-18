@@ -239,28 +239,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>msi20 <span class="ot">&lt;-</span> <span class="fu">msi20.data</span>() <span class="co">#&gt;affection de la table MSI20 a la variable ms</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>msi20 <span class="co">#&gt;afichage des premiers elements de la table</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 20 × 6</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Libellé              Place      Cours Quantité `Var.(%)` Date  </span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;                &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;     &lt;time&gt;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 ATLANTASANAD         Casablanca   136 78794    -2,82     15:39 </span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 ATTIJARIWAFA BANK    Casablanca  4806 13901    +0,12     15:30 </span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 BANK OF AFRICA       Casablanca   211 60741    -0,57     15:36 </span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 BCP                  Casablanca   288 21620    -0,69     15:34 </span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 CIMENTS DU MAROC     Casablanca  1940 3487     -0,56     15:37 </span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 COSUMAR              Casablanca 27145 21       +0,91     15:17 </span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 DISWAY               Casablanca   760 74       -1,04     15:36 </span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 DOUJA PROM ADDOHA    Casablanca  1144 469155   -0,09     15:34 </span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 HPS                  Casablanca  6600 -        -         15:30 </span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 ITISSALAT AL-MAGHRIB Casablanca 13675 72227    +0,59     15:30 </span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11 LABEL VIE            Casablanca  5300 -        -         15:30 </span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 LAFARGEHOLCIM MAROC  Casablanca  2255 -        -         15:30 </span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13 MANAGEM              Casablanca  1826 40       +0,33     12:46 </span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14 MICRODATA            Casablanca   655 159      -0,15     15:30 </span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15 MUTANDIS SCA         Casablanca  2559 30622    +0,35     15:39 </span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 16 SMI                  Casablanca  1490 7        -0,6      14:56 </span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 17 SNEP                 Casablanca   840 526      -1,15     15:32 </span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 18 SODEP-Marsa Maroc    Casablanca  2842 3739     -0,63     14:54 </span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 19 SONASID              Casablanca   715 3053     -0,69     15:33 </span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 20 TAQA MOROCCO         Casablanca  1197 179      +0,08     15:36</span></span></code></pre></div>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Libellé              Place      Cours Quantité `Var.(%)` Date      </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;                &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;     </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 ATLANTASANAD         Casablanca   138 1390     +1,47     12:21     </span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 ATTIJARIWAFA BANK    Casablanca  4812 2568     +0,12     12:49     </span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 BANK OF AFRICA       Casablanca   210 12010    -0,47     12:19     </span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 BCP                  Casablanca   288 100      0         12:34     </span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 CIMENTS DU MAROC     Casablanca  1940 1308     0         12:34     </span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 COSUMAR              Casablanca   269 3195     -0,9      12:18     </span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 DISWAY               Casablanca   760 237      0         12:00     </span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 DOUJA PROM ADDOHA    Casablanca  1163 49829    +1,66     13:07     </span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 HPS                  Casablanca  6600 -        -         16/02/2022</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 ITISSALAT AL-MAGHRIB Casablanca 13725 160454   +0,37     13:09     </span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11 LABEL VIE            Casablanca  5300 -        -         16/02/2022</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 LAFARGEHOLCIM MAROC  Casablanca  2260 5        +0,22     12:22     </span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13 MANAGEM              Casablanca  1830 1186     +0,22     13:09     </span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14 MICRODATA            Casablanca   652 16       -0,46     10:42     </span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15 MUTANDIS SCA         Casablanca 26105 30914    +2,01     13:05     </span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 16 SMI                  Casablanca  1490 -        -         16/02/2022</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 17 SNEP                 Casablanca   841 2528     +0,12     12:53     </span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 18 SODEP-Marsa Maroc    Casablanca   283 1312     -0,42     10:57     </span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 19 SONASID              Casablanca   720 1470     +0,70     11:52     </span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 20 TAQA MOROCCO         Casablanca  1228 136      +2,59     11:03</span></span></code></pre></div>
 </div>
 <div id="la-fonction-masi.data" class="section level2">
 <h2>La fonction <strong>masi.data()</strong></h2>
@@ -271,12 +271,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 6 × 8</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   `Code Isin`  Instrument           `Nombre de titres` Cours    `Facteur flott…`</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   &lt;chr&gt;        &lt;chr&gt;                &lt;chr&gt;              &lt;chr&gt;    &lt;chr&gt;           </span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1 MA0000012445 ATTIJARIWAFA BANK    215 140 839,00     480,00   0,30            </span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2 MA0000011488 ITISSALAT AL-MAGHRIB 879 095 340,00     135,95   0,20            </span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1 MA0000012445 ATTIJARIWAFA BANK    215 140 839,00     480,60   0,30            </span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2 MA0000011488 ITISSALAT AL-MAGHRIB 879 095 340,00     136,75   0,20            </span></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3 MA0000012320 LAFARGEHOLCIM MAR    23 431 240,00      2 255,00 0,30            </span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4 MA0000011884 BCP                  203 312 473,00     290,00   0,20            </span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5 MA0000012437 BANK OF AFRICA       205 606 648,00     212,20   0,25            </span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6 MA0000012247 COSUMAR              94 487 143,00      269,00   0,40            </span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4 MA0000011884 BCP                  203 312 473,00     288,00   0,20            </span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5 MA0000012437 BANK OF AFRICA       205 606 648,00     211,00   0,25            </span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6 MA0000012247 COSUMAR              94 487 143,00      271,45   0,40            </span></span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 3 more variables: `Facteur de plafonnement` &lt;chr&gt;,</span></span>
 <span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; #   `Capitalisation flottante` &lt;chr&gt;, Poids &lt;chr&gt;</span></span></code></pre></div>
 </div>
@@ -1488,45 +1488,66 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-1203"><a href="#cb5-1203" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13/12/2021 482.10  482.10  489.00     -1.01  179949</span></span>
 <span id="cb5-1204"><a href="#cb5-1204" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14/12/2021 483.50  483.50  486.00      0.29   26761</span></span></code></pre></div>
 </div>
+<div id="la-fonction-get_infoticker" class="section level2">
+<h2>La fonction <strong>get_info(ticker)</strong></h2>
+<p>Elle permet d’obtenir des informations rapides sur une entreprise.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_info</span>(<span class="st">&#39;ATW&#39;</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                  Information         </span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; name             &quot;Attijariwafa Bk Rg&quot;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; name_2           &quot;&quot;                  </span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ISIN             &quot;MA0000012445&quot;      </span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; nbTitre          &quot;215140839&quot;         </span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; cours            &quot;481.250&quot;           </span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; cloture          &quot;480.60&quot;            </span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; capitalisation   &quot;103536528768.75&quot;   </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; cotation         &quot;17/02/2022 à 13:37&quot;</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; variation        &quot;0.14&quot;              </span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; volume_variation &quot;0.67&quot;              </span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; volume           &quot;2255618&quot;           </span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; volumeTitre      &quot;4687&quot;              </span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ouverture        &quot;481.000&quot;           </span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; min              &quot;480.600&quot;           </span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; max              &quot;481.500&quot;</span></span></code></pre></div>
+</div>
 <div id="la-fonction-bysector" class="section level2">
 <h2>La fonction <strong>bySector()</strong> :</h2>
 <p>Elle renvoie une table contenant des données par secteur d’activités. Elle est une fonction sans argument.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Afichage des données par secteur d&#39;activité</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">bySector</span>()</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 23 × 4</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Secteur                                          Valeur `Var %` `Var % 31/12`</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;                                            &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;        </span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 AGROALIMENTAIRE / PRODUCTION                     38 29… 1,08 %  3,41 %       </span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 TELECOMMUNICATIONS                               2 007… 0,59 %  -1,94 %      </span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 PARTICIPATION ET PROMOTION IMMOBILIERES          3 829… 0,55 %  11,43 %      </span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 MINES                                            28 13… 0,15 %  9,87 %       </span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 SOCIETES DE PORTEFEUILLES - HOLDINGS             4 897… 0,15 %  -2,21 %      </span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 TRANSPORT                                        2 475… 0,12 %  -3,39 %      </span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 ELECTRICITE                                      2 674… 0,08 %  14,00 %      </span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 BOISSONS                                         17 32… -       8,11 %       </span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 SOCIETE DE FINANCEMENT &amp; AUTRES ACTIVITES FINAN… 9 509… -       7,41 %       </span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 SERVICES AUX COLLECTIVITES                       1 166… -       18,62 %      </span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 13 more rows</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Afichage des données par secteur d&#39;activité</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">bySector</span>()</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 23 × 4</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Secteur                                      Valeur    `Var %` `Var % 31/12`</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;                                        &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;        </span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 AGROALIMENTAIRE / PRODUCTION                 38 296,38 -       3,41 %       </span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 ASSURANCES                                   5 666,36  -       2,62 %       </span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 BATIMENT &amp; MATERIAUX DE CONSTRUCTION         22 161,23 -       2,93 %       </span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 BANQUES                                      14 415,19 -       2,19 %       </span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 BOISSONS                                     17 326,55 -       8,11 %       </span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 CHIMIE                                       7 289,24  -       15,56 %      </span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 DISTRIBUTEURS                                51 205,69 -       7,06 %       </span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 ELECTRICITE                                  2 674,86  -       14,00 %      </span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 INGENIERIES &amp; BIENS D’EQUIPEMENT INDUSTRIELS 171,51    -       42,15 %      </span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 PARTICIPATION ET PROMOTION IMMOBILIERES      3 829,77  -       11,43 %      </span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 13 more rows</span></span></code></pre></div>
 </div>
 <div id="la-fonction-instruments" class="section level2">
 <h2>La fonction <strong>instruments()</strong> :</h2>
 <p>Elle est sans argument et nous donne les informations sur les instruments financiers du marché, telles que le code ISIN, le compartiment, le nombre de titres etc.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Afichage les instruments financiers du marché</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">instruments</span>()</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 76 × 5</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    `Code ISIN`  `Libelle instru…` `Secteur/Catég…` Compartiment `Nombre de tit…`</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;        &lt;chr&gt;             &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt;           </span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 MA0000012296 AFMA              ACTIONS 1ERE LI… Principal B  1000000         </span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 MA0000012114 AFRIC INDUSTRIES… ACTIONS 1ERE LI… Principal B  291500          </span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 MA0000010951 AFRIQUIA GAZ      ACTIONS 1ERE LI… Principal A  3437500         </span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 MA0000010944 AGMA              ACTIONS 1ERE LI… Alternatif A 200000          </span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 MA0000011819 ALLIANCES         ACTIONS 1ERE LI… Principal B  22078588        </span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 MA0000010936 ALUMINIUM DU MAR… ACTIONS 1ERE LI… Principal B  465954          </span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 MA0000012460 ARADEI CAPITAL    ACTIONS 1ERE LI… Principal F  10645783        </span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 MA0000011710 ATLANTASANAD      ACTIONS 1ERE LI… Principal A  60283595        </span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 MA0000012445 ATTIJARIWAFA BANK ACTIONS 1ERE LI… Principal A  215140839       </span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 MA0000010969 AUTO HALL         ACTIONS 1ERE LI… Principal A  50294528        </span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 66 more rows</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Afichage les instruments financiers du marché</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">instruments</span>()</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 76 × 5</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    `Code ISIN`  `Libelle instru…` `Secteur/Catég…` Compartiment `Nombre de tit…`</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;        &lt;chr&gt;             &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt;           </span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 MA0000012296 AFMA              ACTIONS 1ERE LI… Principal B  1000000         </span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 MA0000012114 AFRIC INDUSTRIES… ACTIONS 1ERE LI… Principal B  291500          </span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 MA0000010951 AFRIQUIA GAZ      ACTIONS 1ERE LI… Principal A  3437500         </span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 MA0000010944 AGMA              ACTIONS 1ERE LI… Alternatif A 200000          </span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 MA0000011819 ALLIANCES         ACTIONS 1ERE LI… Principal B  22078588        </span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 MA0000010936 ALUMINIUM DU MAR… ACTIONS 1ERE LI… Principal B  465954          </span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 MA0000012460 ARADEI CAPITAL    ACTIONS 1ERE LI… Principal F  10645783        </span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 MA0000011710 ATLANTASANAD      ACTIONS 1ERE LI… Principal A  60283595        </span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 MA0000012445 ATTIJARIWAFA BANK ACTIONS 1ERE LI… Principal A  215140839       </span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 MA0000010969 AUTO HALL         ACTIONS 1ERE LI… Principal A  50294528        </span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 66 more rows</span></span></code></pre></div>
 </div>
 <div id="la-classe-de-fonctions-today." class="section level2">
 <h2>La classe de fonctions <strong>today.</strong> :</h2>
@@ -1536,70 +1557,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>today.prizelist(“up_or_down”)</strong> : reçoit ‘’up’’ ou ‘’down’’ et renvoie respectivement une table de palmarès de hausse ou de baisse des cours des instruments du marché</li>
 </ul>
 </blockquote>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Afichage du palmares de hausse des cours de la journée</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">today.prizelist</span>(<span class="st">&#39;up&#39;</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 16 × 7</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Nom          Cours `1 sem. perf.%` `Max 1 sem.` `Min 1 sem.` `Quantité 1 se…`</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;        &lt;chr&gt;        &lt;chr&gt;           </span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 Lydec P      280,… +11,96%         -            -            360,00          </span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 Oulmes P     1 29… +11,58%         1 291,00     1 197,00     41,00           </span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 Alliances P  47,00 +8,17%          48,40        40,35        2 690 105,00    </span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 BALIMA P     124,… +8,06%          124,00       119,30       12,00           </span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 Afric Indus. 362,… +3,54%          368,00       349,00       5 229,00        </span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 PROMOPHARM   1 17… +2,54%          1 170,00     1 133,00     352,00          </span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 S2M P        204,… +2,30%          205,00       200,30       438,00          </span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 SALAFIN P    755,… +1,89%          790,00       733,10       50 309,00       </span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 Lesieur Cri… 195,… +1,56%          195,50       192,00       17 935,00       </span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 Delta Holdi… 32,24 +1,07%          32,29        31,70        371 704,00      </span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11 Cartier Saa… 31,76 +0,83%          31,80        30,10        7 480,00        </span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 Auto Hall P  111,… +0,59%          112,00       109,00       47 895,00       </span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13 Maghreb Oxy… 420,… +0,24%          430,95       419,00       1 236,00        </span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14 Agma P       4 81… +0,19%          4 810,00     4 801,00     51,00           </span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15 COSUMAR      271,… +0,13%          273,10       268,00       484 704,00      </span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 16 EQDOM P      1 48… +0,07%          1 481,00     1 481,00     7 746,00        </span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 1 more variable: `Volume 1 sem.` &lt;chr&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Afichage du palmares de hausse des cours de la journée</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">today.prizelist</span>(<span class="st">&#39;up&#39;</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 14 × 7</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Nom          Cours `1 sem. perf.%` `Max 1 sem.` `Min 1 sem.` `Quantité 1 se…`</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;        &lt;chr&gt;        &lt;chr&gt;           </span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 Alliances P  49,81 +8,17%          49,81        41,01        2 708 102,00    </span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 Oulmes P     1 29… +7,85%          1 291,00     1 197,00     42,00           </span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 Risma P      116,… +4,50%          116,00       110,50       20 285,00       </span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 BALIMA P     124,… +3,94%          124,00       119,30       14,00           </span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 Managem P    1 88… +3,41%          1 880,00     1 817,00     20 026,00       </span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 Cartier Saa… 31,76 +2,45%          31,80        30,10        7 624,00        </span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 S2M P        204,… +2,30%          205,00       200,30       439,00          </span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 SALAFIN P    755,… +0,67%          790,00       733,10       48 294,00       </span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 STROC Indus… 52,30 +0,58%          56,59        50,51        156 015,00      </span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 Maroc Telec… 137,… +0,40%          139,25       135,40       2 185 519,00    </span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11 Resid Dar S… 30,40 +0,33%          31,59        30,01        324 170,00      </span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 Agma P       4 81… +0,19%          4 810,00     4 801,00     57,00           </span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13 PROMOPHARM   1 17… +0,09%          1 170,00     1 141,00     352,00          </span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14 EQDOM P      1 48… +0,07%          1 481,00     1 481,00     7 005,00        </span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 1 more variable: `Volume 1 sem.` &lt;chr&gt;</span></span></code></pre></div>
 <blockquote>
 <ul>
 <li><strong>today.market()</strong> : est sans argument et renvoie le cours actuel des instruments financier ainsi que leurs variations, leurs cours à l’ouverture, leurs max etc.</li>
 </ul>
 </blockquote>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Affichage des données du marché d&#39;aujourd&#39;hui</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">today.market</span>()</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 75 × 9</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Valeur    `Date/Heure` Ouverture Cours `Variation %` Quantité Volume `+ Haut`</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;   </span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 Addoha    15:30:25     11,49     11,44 -0,09%        469 155  5 378… 11,49   </span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 AFMA      15:30:05     1 389,00  1 38… 0,00%         1        1 389… 1 389,00</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 Afric In… 15:30:03     362,30    362,… +2,06%        104      37 24… 362,30  </span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 Afriquia… 15:30:50     5 780,00  5 78… -1,83%        3        17 34… 5 780,00</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 Agma      14:30:08     4 810,00  4 81… 0,00%         14       67 34… 4 810,00</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 Alliances 15:30:19     46,45     47,00 +2,17%        117 421  5 530… 48,20   </span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 Aluminiu… 15:30:41     1 440,00  1 44… -0,14%        82       118 1… 1 443,00</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 Aradei C… 15:30:07     450,00    450,… 0,00%         5 997    2 698… 450,00  </span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 ATLANTAS… 15:30:54     136,70    136,… -2,82%        78 794   10 75… 139,65  </span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 Attijari… 15:30:22     485,00    480,… +0,12%        13 901   6 673… 485,00  </span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 65 more rows, and 1 more variable: `+ Bas` &lt;chr&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Affichage des données du marché d&#39;aujourd&#39;hui</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">today.market</span>()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 75 × 9</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Valeur    `Date/Heure` Ouverture Cours `Variation %` Quantité Volume `+ Haut`</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;   </span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 Addoha    13:44:55     11,49     11,63 +1,66%        74 454   860 8… 11,65   </span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 AFMA      16.02.2022   1 389,00  1 38… 0,00%         1        1 389… 1 389,00</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 Afric In… 16.02.2022   362,30    362,… +2,06%        104      37 24… 362,30  </span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 Afriquia… 10:42:32     5 720,00  5 72… -1,04%        2        11 44… 5 720,00</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 Agma      15.02.2022   4 810,00  4 81… +0,19%        14       67 34… 4 810,00</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 Alliances 13:32:38     47,50     49,81 +5,98%        138 739  6 656… 49,81   </span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 Aluminiu… 16.02.2022   1 440,00  1 44… -0,14%        82       118 1… 1 443,00</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 Aradei C… 10:44:36     447,00    447,… -0,67%        171      76 89… 450,00  </span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 ATLANTAS… 12:21:36     137,00    138,… +1,47%        1 390    191 2… 138,50  </span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 Attijari… 13:37:31     481,00    481,… +0,14%        4 687    2 255… 481,50  </span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 65 more rows, and 1 more variable: `+ Bas` &lt;chr&gt;</span></span></code></pre></div>
 <blockquote>
 <ul>
 <li><strong>today.transactions()</strong> : permet d’obtenir une table des transactions de la journée. Elle est une fonction sans argument.</li>
 </ul>
 </blockquote>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Affichages des transactions de la journée</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">today.transactions</span>()</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 50 × 5</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Heure    `Insturment financier`        Cours    Quantité Volume    </span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;                         &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;     </span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 15:39:52 MUTANDIS SCA                  255,90   100,00   25 590,00 </span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 15:39:14 ENNAKL                        37,00    50,00    1 850,00  </span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 15:39:04 ATLANTASANAD                  136,00   70,00    9 520,00  </span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 15:38:57 ATLANTASANAD                  136,00   13,00    1 768,00  </span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 15:38:26 ATLANTASANAD                  136,00   3,00     408,00    </span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 15:38:06 ATLANTASANAD                  136,00   1,00     136,00    </span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 15:37:56 TOTALENERGIES MARKETING MAROC 1 795,00 4,00     7 180,00  </span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 15:37:38 CIMENTS DU MAROC              1 940,00 20,00    38 800,00 </span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 15:37:12 ATLANTASANAD                  136,00   2 221,00 302 056,00</span></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 15:37:12 ATLANTASANAD                  136,00   40,00    5 440,00  </span></span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 40 more rows</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;Affichages des transactions de la journée</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">today.transactions</span>()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 50 × 5</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Heure    `Insturment financier` Cours    Quantité Volume   </span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;                  &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;    </span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 13:10:10 MED PAPER              25,97    2,00     51,94    </span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 13:09:58 MANAGEM                1 830,00 28,00    51 240,00</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 13:09:58 MANAGEM                1 830,00 7,00     12 810,00</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 13:09:02 ITISSALAT AL-MAGHRIB   137,25   230,00   31 567,50</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 13:08:32 ALLIANCES              49,02    100,00   4 902,00 </span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 13:08:32 ALLIANCES              49,01    50,00    2 450,50 </span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 13:08:32 ALLIANCES              49,00    1 500,00 73 500,00</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 13:08:32 ALLIANCES              49,00    320,00   15 680,00</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 13:08:00 ALLIANCES              49,04    200,00   9 808,00 </span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 13:07:54 ALLIANCES              49,10    30,00    1 473,00 </span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # … with 40 more rows</span></span></code></pre></div>
 </div>
 <div id="exemples-dutilisations-de-la-librarycasabourse" class="section level2">
 <h2>Exemples d’utilisations de la library(casabourse) :</h2>
@@ -1608,12 +1627,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Nous allons tracer la courbe de variations des cours des titres de Attijariwafa Bank et de la Banque Populaire du Maroc entre le début de l’année 2020 et le 15 décembre 2021.</li>
 </ul>
 </blockquote>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;lecture des donnees de Attijariwafa Bank</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>atw <span class="ot">&lt;-</span> <span class="fu">daily.data</span>(<span class="at">ticker =</span> <span class="st">&quot;ATW&quot;</span>, <span class="at">from =</span> <span class="st">&quot;01-01-2020&quot;</span>, <span class="at">to =</span> <span class="st">&quot;15-12-2021&quot;</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning: JSON string contains (illegal) UTF8 byte-order-mark!</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;lecture des donnees de la Banque Populaire du Maroc</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>bcp <span class="ot">&lt;-</span> <span class="fu">daily.data</span>(<span class="at">ticker =</span> <span class="st">&quot;BCP&quot;</span>, <span class="at">from =</span> <span class="st">&quot;01-01-2020&quot;</span>, <span class="at">to =</span> <span class="st">&quot;15-12-2021&quot;</span>)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning: JSON string contains (illegal) UTF8 byte-order-mark!</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;lecture des donnees de Attijariwafa Bank</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>atw <span class="ot">&lt;-</span> <span class="fu">daily.data</span>(<span class="at">ticker =</span> <span class="st">&quot;ATW&quot;</span>, <span class="at">from =</span> <span class="st">&quot;01-01-2020&quot;</span>, <span class="at">to =</span> <span class="st">&quot;15-12-2021&quot;</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning: JSON string contains (illegal) UTF8 byte-order-mark!</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;lecture des donnees de la Banque Populaire du Maroc</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>bcp <span class="ot">&lt;-</span> <span class="fu">daily.data</span>(<span class="at">ticker =</span> <span class="st">&quot;BCP&quot;</span>, <span class="at">from =</span> <span class="st">&quot;01-01-2020&quot;</span>, <span class="at">to =</span> <span class="st">&quot;15-12-2021&quot;</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning: JSON string contains (illegal) UTF8 byte-order-mark!</span></span></code></pre></div>
 </div>
 
 
