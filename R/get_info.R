@@ -5,9 +5,8 @@
 #'
 #' @return data frame
 #' @description This function allows you to get quick information about a company
-#' @examples get_info("adh)
+#' @examples get_info("adh")
 #' @export
-#'
 #' @examples
 get_info <- function(ticker) {
   ticker <- toupper(ticker)
@@ -20,9 +19,8 @@ get_info <- function(ticker) {
       dat <- data.frame(tick, codeisin)
       isin <- dat[dat$tick == ticker, 2]
       link <- paste("https://www.leboursier.ma/api?method=getStockInfo&ISIN=", "&format=json", sep = isin)
-      df_info <- httr::GET(link) |>
-        httr::content(encoding = "utf8")
-      df_info <- t(data.frame(df_info[["result"]]))
+      df_info <- RJSONIO::fromJSON(link)
+      df_info <- data.frame(df_info$result)
       colnames(df_info) <- "Information"
       df_info
     },

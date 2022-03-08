@@ -18,8 +18,7 @@ daily.data <- function(ticker = "MASI", from = "28-12-2020", to = "28-02-2022") 
           from <- as.Date(from, "%d-%m-%Y")
           to <- as.Date(to, "%d-%m-%Y")
           url <- "https://www.leboursier.ma/api?method=getMasiHistory&periode=5y&format=json"
-          masi <- httr::GET(url)
-          masi <- httr::content(masi, encoding = "UTF-8")
+          masi <- RJSONIO::fromJSON(url)
           masi <- masi$result
           Date <- unlist(masi$labels)
           Date <- as.Date.POSIXct(Date)
@@ -49,8 +48,7 @@ daily.data <- function(ticker = "MASI", from = "28-12-2020", to = "28-02-2022") 
           link <- paste("https://www.leboursier.ma/api?method=getPriceHistory&ISIN=", "&format=json&from=", sep = toString(isin))
           link <- paste(link, "&to=", sep = toString(from))
           link <- paste0(link, toString(to))
-          r <- httr::GET(link)
-          r <- httr::content(r, encoding = "UTF8-SIG")
+          r <- RJSONIO::fromJSON(link)
           df <- r$result
           Date <- rep(list(NULL), length(df))
           Value <- rep(list(NULL), length(df))
@@ -87,7 +85,8 @@ daily.data <- function(ticker = "MASI", from = "28-12-2020", to = "28-02-2022") 
         }
       )
     }
-  } else {
+  }
+  else {
     print("Wrong ticker! You can display all tickers with tickers() function")
   }
 }
